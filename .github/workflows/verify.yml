@@ -1,0 +1,42 @@
+name: Reproduce fictional starter
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 audit.py demo
+      - run: python3 tools/verify_connected_demo.py
+      - uses: mhdteto/search-ai-audit-action@9c4295aaf7574278e33eabaf5392197ce37ceb06
+        id: observe
+        with:
+          url: https://example.org/
+          fixture: examples/fictional-workflow/inputs/http-fixture.json
+          output-dir: reports/action-fixture
+      - name: Verify action outputs against frozen observations
+        env:
+          REPORT_JSON: ${{ steps.observe.outputs.report-json }}
+        run: |
+          python3 - <<'PY'
+          import json,os,pathlib
+          actual=json.loads(pathlib.Path(os.environ['REPORT_JSON']).read_text())
+          expected=json.loads(pathlib.Path('examples/fictional-workflow/reports/discoverability/report.json').read_text())
+          assert actual==expected
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fictional-five-tool-reports
+          path: examples/fictional-workflow/reports/
+          if-no-files-found: error
+          retention-days: 7

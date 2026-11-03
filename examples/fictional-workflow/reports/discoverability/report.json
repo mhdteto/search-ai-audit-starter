@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "mode": "observational",
+  "input_url": "https://example.org/",
+  "collected_at": "2026-11-01T00:00:00Z",
+  "limits": {
+    "resources": 3,
+    "http_requests": 12,
+    "redirects_per_resource": 3,
+    "body_bytes_per_response": 1048576,
+    "dns_wait_seconds": 5,
+    "request_budget_seconds": 5,
+    "internal_link_sample": 20
+  },
+  "scope": "One page, its origin robots.txt, and at most one same-origin sitemap candidate. Redirects bounded to three per resource.",
+  "interpretation": "HTTP success, directives and markup do not establish indexing, ranking, AI retrieval or citations.",
+  "page": {
+    "url": "https://example.org/",
+    "status": 200,
+    "redirect_chain": [
+      {
+        "url": "https://example.org/",
+        "status": 200
+      }
+    ],
+    "headers": {
+      "content-type": "text/html; charset=utf-8",
+      "x-robots-tag": "max-snippet:160"
+    },
+    "meta_robots": [
+      "index,follow"
+    ],
+    "canonicals": [
+      {
+        "declared": "https://example.org/",
+        "resolved": "https://example.org/",
+        "valid_http_url": true
+      }
+    ],
+    "internal_links": [
+      "https://example.org/about",
+      "https://example.org/evidence"
+    ],
+    "json_ld_blocks": 1,
+    "json_ld_invalid_blocks": 0,
+    "json_ld_types": [
+      "Organization"
+    ],
+    "analysis": "HTML observations only",
+    "base_element_handling": "Links resolve against final page URL; HTML base elements are not applied."
+  },
+  "robots": {
+    "url": "https://example.org/robots.txt",
+    "status": 200,
+    "redirect_chain": [
+      {
+        "url": "https://example.org/robots.txt",
+        "status": 200
+      }
+    ],
+    "headers": {
+      "content-type": "text/plain"
+    },
+    "availability": "available",
+    "groups": [
+      {
+        "user_agents": [
+          "*"
+        ],
+        "rules": [
+          {
+            "directive": "disallow",
+            "value": "/internal/"
+          }
+        ]
+      },
+      {
+        "user_agents": [
+          "ExampleResearchBot"
+        ],
+        "rules": [
+          {
+            "directive": "disallow",
+            "value": "/"
+          }
+        ]
+      }
+    ],
+    "directives": [
+      {
+        "directive": "user-agent",
+        "value": "*"
+      },
+      {
+        "directive": "disallow",
+        "value": "/internal/"
+      },
+      {
+        "directive": "user-agent",
+        "value": "ExampleResearchBot"
+      },
+      {
+        "directive": "disallow",
+        "value": "/"
+      },
+      {
+        "directive": "sitemap",
+        "value": "https://example.org/sitemap.xml"
+      }
+    ],
+    "sitemaps": [
+      "https://example.org/sitemap.xml"
+    ],
+    "interpretation": "Manual review required; no engine-specific allow/deny decision is calculated."
+  },
+  "sitemap": {
+    "url": "https://example.org/sitemap.xml",
+    "status": 200,
+    "redirect_chain": [
+      {
+        "url": "https://example.org/sitemap.xml",
+        "status": 200
+      }
+    ],
+    "headers": {
+      "content-type": "application/xml"
+    },
+    "note": "Response observed only; XML validity, listed URLs and sitemap index children are not evaluated."
+  },
+  "transport": "synthetic offline fixture"
+}

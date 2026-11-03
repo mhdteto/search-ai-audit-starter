@@ -1,0 +1,16 @@
+{
+  "entity_id": "fictional-alex-rowan",
+  "entity_type": "person",
+  "name": "Alex Rowan",
+  "role": "Research Director",
+  "organization": "Cedar Notes",
+  "description": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+  "aliases": {
+    "role": [
+      "Directeur de recherche"
+    ],
+    "organization": [
+      "Cedar Notes Publishing"
+    ]
+  }
+}

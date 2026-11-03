@@ -1,0 +1,3 @@
+"engine","model","interface","language","market","collected_from","collected_to","answer_count","cited_answer_count","explicit_citation_count","cited_answer_rate","citations_per_answer","citations_per_cited_answer"
+"Fictional Atlas","demo-1","web","en","United Kingdom","2026-10-25","2026-10-25","4","2","3","0.5","0.75","1.5"
+"Fictional Atlas","demo-1","web","fr","France","2026-10-25","2026-10-25","2","1","1","0.5","0.5","1.0"

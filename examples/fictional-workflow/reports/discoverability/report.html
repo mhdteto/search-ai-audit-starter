@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search &amp; AI discoverability observations</title><style>body{background:#071a2e;color:#e3f2fa;font:16px/1.6 system-ui,sans-serif;margin:0}main{max-width:1080px;margin:auto;padding:40px 24px}h1,h2{color:#60e5ef;line-height:1.15}p{max-width:72ch}pre,dl,ul{background:#102b42;border:1px solid #24526c;border-radius:12px;padding:24px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}dt{color:#60e5ef;font-weight:600}dd{margin:0 0 16px;overflow-wrap:anywhere}ul{padding-left:44px}li{margin:12px 0}small{color:#b2cddd}summary{cursor:pointer;color:#60e5ef;padding:12px 0}</style></head><body><main><small>SEARCH · EVIDENCE · INTERPRETATION</small><h1>Search &amp; AI discoverability observations</h1><p>This bounded technical snapshot does not establish indexing, rankings or AI citations. Review the observed directives and the limits before making changes.</p><h2>Observed snapshot</h2><dl><dt>Collection</dt><dd>2026-11-01T00:00:00Z</dd><dt>Transport</dt><dd>synthetic offline fixture</dd><dt>Page HTTP status</dt><dd>200</dd><dt>Final page URL</dt><dd>https://example.org/</dd><dt>HTML analysis</dt><dd>HTML observations only</dd><dt>Canonical links observed</dt><dd>1</dd><dt>Robots directives (meta and header)</dt><dd>index,follow | max-snippet:160</dd><dt>robots.txt</dt><dd>available</dd><dt>Sitemap candidate response</dt><dd>200</dd><dt>JSON-LD blocks</dt><dd>1</dd><dt>Internal links sampled</dt><dd>2</dd></dl><h2>Manual review</h2><ul><li>No additional review flags from these limited observations. This is not evidence of indexing, ranking, AI retrieval or citations.</li></ul><details><summary>Full JSON evidence and request limits</summary><pre>{
+  &quot;schema_version&quot;: 1,
+  &quot;mode&quot;: &quot;observational&quot;,
+  &quot;input_url&quot;: &quot;https://example.org/&quot;,
+  &quot;collected_at&quot;: &quot;2026-11-01T00:00:00Z&quot;,
+  &quot;limits&quot;: {
+    &quot;resources&quot;: 3,
+    &quot;http_requests&quot;: 12,
+    &quot;redirects_per_resource&quot;: 3,
+    &quot;body_bytes_per_response&quot;: 1048576,
+    &quot;dns_wait_seconds&quot;: 5,
+    &quot;request_budget_seconds&quot;: 5,
+    &quot;internal_link_sample&quot;: 20
+  },
+  &quot;scope&quot;: &quot;One page, its origin robots.txt, and at most one same-origin sitemap candidate. Redirects bounded to three per resource.&quot;,
+  &quot;interpretation&quot;: &quot;HTTP success, directives and markup do not establish indexing, ranking, AI retrieval or citations.&quot;,
+  &quot;page&quot;: {
+    &quot;url&quot;: &quot;https://example.org/&quot;,
+    &quot;status&quot;: 200,
+    &quot;redirect_chain&quot;: [
+      {
+        &quot;url&quot;: &quot;https://example.org/&quot;,
+        &quot;status&quot;: 200
+      }
+    ],
+    &quot;headers&quot;: {
+      &quot;content-type&quot;: &quot;text/html; charset=utf-8&quot;,
+      &quot;x-robots-tag&quot;: &quot;max-snippet:160&quot;
+    },
+    &quot;meta_robots&quot;: [
+      &quot;index,follow&quot;
+    ],
+    &quot;canonicals&quot;: [
+      {
+        &quot;declared&quot;: &quot;https://example.org/&quot;,
+        &quot;resolved&quot;: &quot;https://example.org/&quot;,
+        &quot;valid_http_url&quot;: true
+      }
+    ],
+    &quot;internal_links&quot;: [
+      &quot;https://example.org/about&quot;,
+      &quot;https://example.org/evidence&quot;
+    ],
+    &quot;json_ld_blocks&quot;: 1,
+    &quot;json_ld_invalid_blocks&quot;: 0,
+    &quot;json_ld_types&quot;: [
+      &quot;Organization&quot;
+    ],
+    &quot;analysis&quot;: &quot;HTML observations only&quot;,
+    &quot;base_element_handling&quot;: &quot;Links resolve against final page URL; HTML base elements are not applied.&quot;
+  },
+  &quot;robots&quot;: {
+    &quot;url&quot;: &quot;https://example.org/robots.txt&quot;,
+    &quot;status&quot;: 200,
+    &quot;redirect_chain&quot;: [
+      {
+        &quot;url&quot;: &quot;https://example.org/robots.txt&quot;,
+        &quot;status&quot;: 200
+      }
+    ],
+    &quot;headers&quot;: {
+      &quot;content-type&quot;: &quot;text/plain&quot;
+    },
+    &quot;availability&quot;: &quot;available&quot;,
+    &quot;groups&quot;: [
+      {
+        &quot;user_agents&quot;: [
+          &quot;*&quot;
+        ],
+        &quot;rules&quot;: [
+          {
+            &quot;directive&quot;: &quot;disallow&quot;,
+            &quot;value&quot;: &quot;/internal/&quot;
+          }
+        ]
+      },
+      {
+        &quot;user_agents&quot;: [
+          &quot;ExampleResearchBot&quot;
+        ],
+        &quot;rules&quot;: [
+          {
+            &quot;directive&quot;: &quot;disallow&quot;,
+            &quot;value&quot;: &quot;/&quot;
+          }
+        ]
+      }
+    ],
+    &quot;directives&quot;: [
+      {
+        &quot;directive&quot;: &quot;user-agent&quot;,
+        &quot;value&quot;: &quot;*&quot;
+      },
+      {
+        &quot;directive&quot;: &quot;disallow&quot;,
+        &quot;value&quot;: &quot;/internal/&quot;
+      },
+      {
+        &quot;directive&quot;: &quot;user-agent&quot;,
+        &quot;value&quot;: &quot;ExampleResearchBot&quot;
+      },
+      {
+        &quot;directive&quot;: &quot;disallow&quot;,
+        &quot;value&quot;: &quot;/&quot;
+      },
+      {
+        &quot;directive&quot;: &quot;sitemap&quot;,
+        &quot;value&quot;: &quot;https://example.org/sitemap.xml&quot;
+      }
+    ],
+    &quot;sitemaps&quot;: [
+      &quot;https://example.org/sitemap.xml&quot;
+    ],
+    &quot;interpretation&quot;: &quot;Manual review required; no engine-specific allow/deny decision is calculated.&quot;
+  },
+  &quot;sitemap&quot;: {
+    &quot;url&quot;: &quot;https://example.org/sitemap.xml&quot;,
+    &quot;status&quot;: 200,
+    &quot;redirect_chain&quot;: [
+      {
+        &quot;url&quot;: &quot;https://example.org/sitemap.xml&quot;,
+        &quot;status&quot;: 200
+      }
+    ],
+    &quot;headers&quot;: {
+      &quot;content-type&quot;: &quot;application/xml&quot;
+    },
+    &quot;note&quot;: &quot;Response observed only; XML validity, listed URLs and sitemap index children are not evaluated.&quot;
+  },
+  &quot;transport&quot;: &quot;synthetic offline fixture&quot;
+}</pre></details><p>Generated by Search AI Discoverability Checker. Fictional fixture reports are labeled in the evidence.</p></main></body></html>

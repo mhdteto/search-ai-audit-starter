@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://example.org/#alex-rowan",
+      "name": "Alex Rowan",
+      "url": "https://example.org/people/alex-rowan/",
+      "description": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "jobTitle": "Research Director"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://example.org/#cedar-notes",
+      "name": "Cedar Notes",
+      "url": "https://example.org/",
+      "description": "Cedar Notes publishes educational articles about reading journals."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://example.org/notes/reading-journal/#article",
+      "url": "https://example.org/notes/reading-journal/",
+      "headline": "How to start a reading journal",
+      "description": "A short introduction to recording observations about books.",
+      "datePublished": "2026-10-20",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://example.org/#alex-rowan"
+      },
+      "publisher": {
+        "@id": "https://example.org/#cedar-notes"
+      },
+      "mainEntityOfPage": "https://example.org/notes/reading-journal/"
+    }
+  ]
+}

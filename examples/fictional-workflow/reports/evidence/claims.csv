@@ -1,0 +1,4 @@
+claim_id,entity,claim_text,statuses,distinct_publishers,independent_support_publishers
+person-01,Alex Rowan,Alex Rowan chaired the fictional Reading Forum in 2025.,supporting sources; conflicting sources,2,1
+org-01,Cedar Notes,Cedar Notes published a multilingual reading-journal series.,unreviewed; partial; supporting sources,3,0
+org-02,Cedar Notes,Cedar Notes operates offices on three continents.,missing evidence,0,0

@@ -1,0 +1,15 @@
+{
+  "tool": "entity-structured-data-kit",
+  "version": "1.0.0",
+  "scope": "Educational subset structural lint only. No full schema.org validation, factual verification, Google eligibility, ranking or AI citation assessment.",
+  "files": [
+    {
+      "file": "inputs/entity-graph.json",
+      "issues": []
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

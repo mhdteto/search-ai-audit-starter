@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-01",
+  "method": "Counts describe supplied explicit citation observations only. A citation is a distinct normalized URL within an answer; repeated answers count separately. No inference of uncited use, factual support, authority, search ranking or population-wide visibility. Hostnames are not registrable domains. Groups preserve engine, model, interface, language and market. Sampling and prompt composition can change every rate.",
+  "denominators": {
+    "cited_answer_rate": "cited_answer_count / answer_count (fraction 0..1)",
+    "citations_per_answer": "explicit_citation_count / answer_count",
+    "citations_per_cited_answer": "explicit_citation_count / cited_answer_count; null if denominator is zero"
+  },
+  "groups": [
+    {
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "en",
+      "market": "United Kingdom",
+      "answer_count": 4,
+      "cited_answer_count": 2,
+      "explicit_citation_count": 3,
+      "cited_answer_rate": 0.5,
+      "citations_per_answer": 0.75,
+      "citations_per_cited_answer": 1.5,
+      "collected_from": "2026-10-25",
+      "collected_to": "2026-10-25",
+      "prompt_ids": [
+        "p-en"
+      ],
+      "top_hostnames": [
+        {
+          "hostname": "example.org",
+          "citation_count": 2,
+          "answer_count": 2
+        },
+        {
+          "hostname": "example.net",
+          "citation_count": 1,
+          "answer_count": 1
+        }
+      ]
+    },
+    {
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "fr",
+      "market": "France",
+      "answer_count": 2,
+      "cited_answer_count": 1,
+      "explicit_citation_count": 1,
+      "cited_answer_rate": 0.5,
+      "citations_per_answer": 0.5,
+      "citations_per_cited_answer": 1.0,
+      "collected_from": "2026-10-25",
+      "collected_to": "2026-10-25",
+      "prompt_ids": [
+        "p-fr"
+      ],
+      "top_hostnames": [
+        {
+          "hostname": "example.net",
+          "citation_count": 1,
+          "answer_count": 1
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "answer_id": "fr-1",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "fr",
+      "market": "France",
+      "prompt_id": "p-fr",
+      "prompt": "Quelles sources décrivent Cedar Notes ?",
+      "answer_text": "Réponse entièrement fictive : une source est citée.",
+      "citation_urls": [
+        "https://example.net/cedar-notes"
+      ],
+      "citation_count": 1,
+      "unique_hostname_count": 1
+    },
+    {
+      "answer_id": "fr-2",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "fr",
+      "market": "France",
+      "prompt_id": "p-fr",
+      "prompt": "Quelles sources décrivent Cedar Notes ?",
+      "answer_text": "Réponse entièrement fictive : aucune citation explicite.",
+      "citation_urls": [],
+      "citation_count": 0,
+      "unique_hostname_count": 0
+    },
+    {
+      "answer_id": "uk-1",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "en",
+      "market": "United Kingdom",
+      "prompt_id": "p-en",
+      "prompt": "Which public sources describe Cedar Notes?",
+      "answer_text": "Invented answer for demonstration: a reading-journal source is cited.",
+      "citation_urls": [
+        "https://example.net/cedar-notes",
+        "https://example.org/notes/reading-journal/"
+      ],
+      "citation_count": 2,
+      "unique_hostname_count": 2
+    },
+    {
+      "answer_id": "uk-2",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "en",
+      "market": "United Kingdom",
+      "prompt_id": "p-en",
+      "prompt": "Which public sources describe Cedar Notes?",
+      "answer_text": "Invented answer for demonstration: no source citation is supplied.",
+      "citation_urls": [],
+      "citation_count": 0,
+      "unique_hostname_count": 0
+    },
+    {
+      "answer_id": "uk-3",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "en",
+      "market": "United Kingdom",
+      "prompt_id": "p-en",
+      "prompt": "Which public sources describe Cedar Notes?",
+      "answer_text": "Invented answer for demonstration: a reading-journal source is cited.",
+      "citation_urls": [
+        "https://example.org/notes/reading-journal/"
+      ],
+      "citation_count": 1,
+      "unique_hostname_count": 1
+    },
+    {
+      "answer_id": "uk-4",
+      "collected_on": "2026-10-25",
+      "engine": "Fictional Atlas",
+      "model": "demo-1",
+      "interface": "web",
+      "language": "en",
+      "market": "United Kingdom",
+      "prompt_id": "p-en",
+      "prompt": "Which public sources describe Cedar Notes?",
+      "answer_text": "Invented answer for demonstration: no source citation is supplied.",
+      "citation_urls": [],
+      "citation_count": 0,
+      "unique_hostname_count": 0
+    }
+  ]
+}

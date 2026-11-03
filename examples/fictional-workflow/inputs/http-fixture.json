@@ -1,0 +1,27 @@
+{
+  "collected_at": "2026-11-01T00:00:00Z",
+  "responses": {
+    "https://example.org/": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": "max-snippet:160"
+      },
+      "body": "<!doctype html><html lang=\"en\"><head><title>Cedar Notes — fictional demonstration</title><meta name=\"robots\" content=\"index,follow\"><link rel=\"canonical\" href=\"https://example.org/\"><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Cedar Notes — fictional demonstration\"}</script></head><body><h1>Cedar Notes — fictional demonstration</h1><a href=\"/about\">About</a><a href=\"/evidence\">Evidence</a></body></html>"
+    },
+    "https://example.org/robots.txt": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain"
+      },
+      "body": "# Fictional synthetic policy\nUser-agent: *\nDisallow: /internal/\n\nUser-agent: ExampleResearchBot\nDisallow: /\nSitemap: https://example.org/sitemap.xml\n"
+    },
+    "https://example.org/sitemap.xml": {
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml"
+      },
+      "body": "<?xml version=\"1.0\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>https://example.org/</loc></url></urlset>"
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-01",
+  "notice": "Consistency with the supplied record only. No truth verification, entity resolution, or Google ranking prediction.",
+  "identity": {
+    "entity_id": "fictional-alex-rowan",
+    "entity_type": "person",
+    "name": "Alex Rowan",
+    "role": "Research Director",
+    "organization": "Cedar Notes",
+    "description": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+    "aliases": {
+      "role": [
+        "Directeur de recherche"
+      ],
+      "organization": [
+        "Cedar Notes Publishing"
+      ]
+    }
+  },
+  "profile_count": 4,
+  "status_counts": {
+    "approved_alias": 2,
+    "manual_review": 3,
+    "match": 6,
+    "mismatch": 2,
+    "missing": 3
+  },
+  "results": [
+    {
+      "source_url": "https://example.org/people/alex-rowan/",
+      "observed_at": "2026-10-20",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "name",
+      "canonical": "Alex Rowan",
+      "observed": "Alex Rowan",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.org/people/alex-rowan/",
+      "observed_at": "2026-10-20",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "role",
+      "canonical": "Research Director",
+      "observed": "Research Director",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.org/people/alex-rowan/",
+      "observed_at": "2026-10-20",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "organization",
+      "canonical": "Cedar Notes",
+      "observed": "Cedar Notes",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.org/people/alex-rowan/",
+      "observed_at": "2026-10-20",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "description",
+      "canonical": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "observed": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "status": "manual_review"
+    },
+    {
+      "source_url": "https://example.org/fr/alex-rowan/",
+      "observed_at": "2026-10-21",
+      "language": "fr",
+      "market": "France",
+      "field": "name",
+      "canonical": "Alex Rowan",
+      "observed": "Alex Rowan",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.org/fr/alex-rowan/",
+      "observed_at": "2026-10-21",
+      "language": "fr",
+      "market": "France",
+      "field": "role",
+      "canonical": "Research Director",
+      "observed": "Directeur de recherche",
+      "status": "approved_alias"
+    },
+    {
+      "source_url": "https://example.org/fr/alex-rowan/",
+      "observed_at": "2026-10-21",
+      "language": "fr",
+      "market": "France",
+      "field": "organization",
+      "canonical": "Cedar Notes",
+      "observed": "Cedar Notes Publishing",
+      "status": "approved_alias"
+    },
+    {
+      "source_url": "https://example.org/fr/alex-rowan/",
+      "observed_at": "2026-10-21",
+      "language": "fr",
+      "market": "France",
+      "field": "description",
+      "canonical": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "observed": "Profil fictif pour la démonstration.",
+      "status": "manual_review"
+    },
+    {
+      "source_url": "https://example.net/directory/alex/",
+      "observed_at": "2026-10-22",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "name",
+      "canonical": "Alex Rowan",
+      "observed": "A. Rowan",
+      "status": "mismatch"
+    },
+    {
+      "source_url": "https://example.net/directory/alex/",
+      "observed_at": "2026-10-22",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "role",
+      "canonical": "Research Director",
+      "observed": "Chief Scientist",
+      "status": "mismatch"
+    },
+    {
+      "source_url": "https://example.net/directory/alex/",
+      "observed_at": "2026-10-22",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "organization",
+      "canonical": "Cedar Notes",
+      "observed": "Cedar Notes",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.net/directory/alex/",
+      "observed_at": "2026-10-22",
+      "language": "en",
+      "market": "United Kingdom",
+      "field": "description",
+      "canonical": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "observed": "Invented directory copy requiring review.",
+      "status": "manual_review"
+    },
+    {
+      "source_url": "https://example.net/events/alex/",
+      "observed_at": "2026-10-23",
+      "language": "en",
+      "market": "Canada",
+      "field": "name",
+      "canonical": "Alex Rowan",
+      "observed": "Alex Rowan",
+      "status": "match"
+    },
+    {
+      "source_url": "https://example.net/events/alex/",
+      "observed_at": "2026-10-23",
+      "language": "en",
+      "market": "Canada",
+      "field": "role",
+      "canonical": "Research Director",
+      "observed": "",
+      "status": "missing"
+    },
+    {
+      "source_url": "https://example.net/events/alex/",
+      "observed_at": "2026-10-23",
+      "language": "en",
+      "market": "Canada",
+      "field": "organization",
+      "canonical": "Cedar Notes",
+      "observed": "",
+      "status": "missing"
+    },
+    {
+      "source_url": "https://example.net/events/alex/",
+      "observed_at": "2026-10-23",
+      "language": "en",
+      "market": "Canada",
+      "field": "description",
+      "canonical": "Fictional Research Director at Cedar Notes; all records in this demonstration are invented.",
+      "observed": "",
+      "status": "missing"
+    }
+  ]
+}

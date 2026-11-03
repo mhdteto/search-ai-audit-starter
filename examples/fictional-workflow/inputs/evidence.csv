@@ -1,0 +1,7 @@
+evidence_id,claim_id,source_url,publisher,published_on,accessed_on,relationship,support_status,review_note
+p-01,person-01,https://example.net/forum-program,Fictional Reading Review,2025-12-01,2026-10-10,independent,supports,Invented reviewer note: the fictional program names Alex as chair.
+p-02,person-01,https://example.com/forum-correction,Fictional Forum Journal,2026-01-02,2026-10-11,independent,contradicts,Invented reviewer note: the fictional correction names another chair. Resolve before reuse.
+p-03,person-01,https://example.net/forum-summary, fictional reading review ,2025-12-02,2026-10-10,independent,supports,Same invented publisher as p-01; not an additional publisher.
+o-01,org-01,https://example.org/notes/,Cedar Notes,2026-01-01,2026-01-05,owned,supports,Invented self-published series listing; not independent support.
+o-02,org-01,https://example.com/research-brief,Fictional Research Exchange,2026-02-01,,unknown,partial,Invented partial review; no recorded access date.
+o-03,org-01,https://example.net/research-list,Fictional Reading Review,2026-03-01,2026-10-20,independent,unreviewed,Invented inventory entry; no support review.

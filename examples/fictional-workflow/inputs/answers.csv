@@ -1,0 +1,7 @@
+answer_id,collected_on,engine,model,interface,language,market,prompt_id,prompt,answer_text
+uk-1,2026-10-25,Fictional Atlas,demo-1,web,en,United Kingdom,p-en,Which public sources describe Cedar Notes?,Invented answer for demonstration: a reading-journal source is cited.
+uk-2,2026-10-25,Fictional Atlas,demo-1,web,en,United Kingdom,p-en,Which public sources describe Cedar Notes?,Invented answer for demonstration: no source citation is supplied.
+uk-3,2026-10-25,Fictional Atlas,demo-1,web,en,United Kingdom,p-en,Which public sources describe Cedar Notes?,Invented answer for demonstration: a reading-journal source is cited.
+uk-4,2026-10-25,Fictional Atlas,demo-1,web,en,United Kingdom,p-en,Which public sources describe Cedar Notes?,Invented answer for demonstration: no source citation is supplied.
+fr-1,2026-10-25,Fictional Atlas,demo-1,web,fr,France,p-fr,Quelles sources décrivent Cedar Notes ?,Réponse entièrement fictive : une source est citée.
+fr-2,2026-10-25,Fictional Atlas,demo-1,web,fr,France,p-fr,Quelles sources décrivent Cedar Notes ?,Réponse entièrement fictive : aucune citation explicite.
