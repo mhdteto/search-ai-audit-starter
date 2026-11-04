@@ -10,6 +10,8 @@
 
 Created by **Mohammed Teto — AI Reputation & Authority Strategist**, serving leaders and organizations internationally. [Advisory practice](https://mohammedteto.com/).
 
+[Français — guide de démarrage](docs/QUICKSTART.fr.md) · [Release notes](CHANGELOG.md)
+
 ## See the workflow in action
 
 [![Recorded explorer: separate citation groups, French/France filter and CSV export](.github/readme-assets/explorer-walkthrough.gif)](https://mhdteto.github.io/authority-architecture-system/#citations)
