@@ -10,7 +10,7 @@
 
 Created by **Mohammed Teto — AI Reputation & Authority Strategist**, serving leaders and organizations internationally. [Advisory practice](https://mohammedteto.com/).
 
-[Français — guide de démarrage](docs/QUICKSTART.fr.md) · [Release notes](CHANGELOG.md)
+[Français — guide de démarrage](docs/QUICKSTART.fr.md) · [Stable release v1.0.0](https://github.com/mhdteto/search-ai-audit-starter/releases/tag/v1.0.0) · [Download v1.0.0 ZIP](https://github.com/mhdteto/search-ai-audit-starter/archive/refs/tags/v1.0.0.zip) · [Changelog](CHANGELOG.md)
 
 ## See the workflow in action
 
