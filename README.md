@@ -46,6 +46,8 @@ python3 audit.py live https://example.org/ --output-dir reports/live
 
 Replace the URL with a public page you are authorized to inspect. Open `reports/live/report.html`; preserve `report.json` and its collection date. The command uses the same frozen bounded checker and makes at most 12 HTTP requests including redirects. Real transport is labeled `live public HTTP(S)`. No fictional identity, evidence or citation reports are attached to that observation.
 
+[How to triage a Lighthouse robots.txt failure under a strict CSP](docs/robots-txt-csp-triage.md).
+
 **HTTP 200 and valid markup do not establish indexing, ranking, correct entity descriptions or AI citations.** This is one page plus robots.txt and one sitemap candidate, not a full site crawl. Review all stated limits before drawing a conclusion.
 
 ## 4. Make it an actual audit
