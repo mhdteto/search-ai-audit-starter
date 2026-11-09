@@ -16,6 +16,8 @@ Created by **Mohammed Teto — AI Reputation & Authority Strategist**, serving l
 
 [Try the 10-minute audit and share your feedback](https://github.com/mhdteto/authority-architecture-system/discussions/10).
 
+[Follow Mohammed Teto on GitHub](https://github.com/mhdteto) for new reproducible audits and examples.
+
 [![Recorded explorer: separate citation groups, French/France filter and CSV export](.github/readme-assets/explorer-walkthrough.gif)](https://mhdteto.github.io/authority-architecture-system/#citations)
 
 Actual browser capture; fictional teaching observations. Plays once. [Static screenshot](.github/readme-assets/explorer-static.png) · [Text walkthrough and actual exported sample](https://github.com/mhdteto/authority-architecture-system/blob/main/docs/explorer-walkthrough.md).
