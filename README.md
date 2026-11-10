@@ -38,6 +38,15 @@ This runs the five frozen tools on entirely invented Alex Rowan / Cedar Notes in
 
 The expected observations include two mismatched identity fields, three missing fields, an unsupported office claim and separate English/UK and French/France citation groups. These are teaching data, not market statistics or proof of business impact.
 
+### Ran it from the wrong folder? Recover like this
+
+Nothing here is lost, because `audit.py` resolves its paths from its own location, not from your shell's working directory:
+
+- If the shell says it cannot open `audit.py`, you are simply not in the extracted root folder. Move into the folder that contains `audit.py` and run the command again.
+- If you ran `audit.py` by path from another folder (for example `python3 /path/to/audit.py demo`), that run was already correct: the demo still regenerates the same 17 files under `examples/fictional-workflow/reports/`, and a live run still writes under the root's `reports/`. Just run it from the root next time.
+- If instead you ran one of the frozen tools directly with the relative commands from `examples/fictional-workflow/README.md` while standing in the wrong folder, two things can happen: an input path fails with `No such file`, or a relative `--output-dir` creates a stray `reports/` folder in the folder you were standing in. Delete only that stray `reports/` folder, move into the root folder, and rerun `python3 audit.py demo`. Do not delete `examples/fictional-workflow/reports/` itself: those 17 files are the frozen demo outputs.
+- To confirm you are back to a clean state, rerun `python3 audit.py demo` and look for the final line `PASS: five offline reports reproduce the documented fictional observations.` Then check `git status`: a clean demo shows no changes to the tracked files under `examples/fictional-workflow/reports/`. A `reports/` folder at the root is git-ignored, so remove it by hand if a stray live run left one you do not want.
+
 [Exact tool commands and provenance](examples/fictional-workflow/README.md) · [Three decision-led tutorials](https://github.com/mhdteto/authority-architecture-system/tree/main/tutorials).
 
 ## 3. Observe one real public page separately
